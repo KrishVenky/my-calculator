@@ -68,3 +68,15 @@ class TestMultiplyDivideWithValidation:
         """Test dividing negative numbers"""
         assert divide(-6, -3) == 2
         assert divide(-20, 5) == -4
+    
+    def test_power_function(self):
+        """Test power function"""
+        from src.calculator import power
+        assert power(2, 3) == 8
+        assert power(5, 0) == 1
+
+    def test_sqrt_function(self):
+        """Test square root function"""
+        from src.calculator import sqrt
+        assert sqrt(9) == 3
+        assert sqrt(16) == 4
