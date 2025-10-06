@@ -42,4 +42,29 @@ class TestMultiplyDivideWithValidation:
     def test_subtract_negative_numbers(self):
         """Test subtracting negative numbers"""
         assert subtract(-5, -3) == -2
-        assert subtract(10, -4) == -14
+        assert subtract(10, -4) == 14
+
+    def test_multiply_positive_numbers(self):
+        """Test multiplying positive numbers"""
+        assert multiply(2, 3) == 6
+        assert multiply(10, 5) == 50
+    
+    def test_multiply_negative_numbers(self):
+        """Test multiplying negative numbers"""
+        assert multiply(-2, -3) == 6
+        assert multiply(-10, 2) == -20
+    
+    def test_multiply_by_zero(self):
+        """Test multiplying by zero"""
+        assert multiply(0, 5) == 0
+        assert multiply(10, 0) == 0
+
+    def test_divide_positive_numbers(self):
+        """Test dividing positive numbers"""
+        assert divide(6, 3) == 2
+        assert divide(20, 5) == 4
+
+    def test_divide_negative_numbers(self):
+        """Test dividing negative numbers"""
+        assert divide(-6, -3) == 2
+        assert divide(-20, 5) == -4
